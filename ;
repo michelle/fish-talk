@@ -1,0 +1,216 @@
+## WILICAPAWHITN
+
+## Disclaimer
+
+Hi! I'm Michelle. The topic I'm here to talk to you about was probably what
+piqued your interest, since it's pretty relevant to people who are in school
+right now.
+
+However, I must wanr you that this talk is based on purely anecdotal evidence.
+There's no facts that say that you're going to go through these experiences in
+college and beyond, so i'm going to relinquish my best advice to you here and
+now, before we even start the talk:
+
+Learning to learn is the most important thing you can do. People cna tell you
+things, and you can take classes, but until you run a mile, PE class is useless.
+It's the give a person a fish thign you've always heard, but i don't think most
+people take it to heard, because they've never been given a fish. But you've
+take a PE class, a CS class. And you know whether you cruised through it or
+copied a homework or tried to make the best of it.
+
+
+# Story of my life [title slide]()
+
+
+## I graduated from UC Berkeley
+
+Classes I took were very theoretical. I took our one software engineering class but we
+used Rails, so I snickered at it. We also learned pair programming and SAMOSAs
+and it became a bit of a joke.
+[slide about samosas]()
+
+Among other things I learned at Berkeley are how to:
+  optimize matrix multiply by unrolling loops,
+  bicker with my friends about editors and how to do things in the fewest lines
+    of code
+  solve life's great problems with machine learning and game theory
+  and build reliable data transport on top of UDP.
+
+I also helped start hackers@berkeley, our largest engineering club, and for two
+years i preached staying up all night to learn and eating bagels in the morning.
+
+
+## When I was young, I interned at Google [google slide w/ shinies]()
+
+It's a place. may have heard of it.
+
+Here I was on the Google Docs team building copy/paste for tables.[table slide]()
+
+I wrote a design doc for a whole month, and
+had to rescope my project not once, but twice, which devastated me.[table
+flip]()
+
+
+## Quizlet [quizlet]()
+
+I then worked part-time at Quizlet in my last year of school. Here I worked on
+something that was never released, and felt grossly overpaid because of that. So
+I worked longer hours and had the constant fear that I'd be fired.
+
+
+## Stripe
+
+This fear carried on to my first few months at Stripe. [stripe slide]()
+
+I'm on the product team right now, building out the API at Stripe. Often I feel
+like my job description is "code janitor" and what I'm learning most is how to
+rescope things and how to create realistic milestones, which turn out to be 1/10
+of what I actually feel like I can do.
+
+I'm working on it.
+
+
+
+## title
+
+Without further ado:
+10 things I believed about programming in college.
+
+Hopefully #3 will shock you.
+
+
+# 9. Most problems should be solved with things I learned in my AI class.
+
+
+
+
+# 8. git commit -am "lol"
+
+git rage story.
+
+
+# 7. I don't want to join a startup or do my own thing because I want to learn at a big company first.
+
+Your experience at a big company as an intern will not be the same as your
+experience at a big company as a full time employee.
+
+Or such is my hunch.
+
+
+# 6. [testing, design docs, pair programming] is silly/a pain.
+
+Testing/design docs/pair programming is silly/a pain
+
+
+# 5. * is silly/a pain.
+
+This is often a legitimate belief when * is something that comes from legacy
+systems. E.g. banks still only accept faxes rather than email.
+
+If you believe this, you should flip the chessboard around and think about why
+it exists in the first place. There's probably a reason.
+
+
+# 4.  Optimization is important, and optimization means less & faster. Storing less data, having less lines of code, unrolling
+
+I remember bickering with my project partners as a freshman about whether 
+
+But in real life, Style oft trumps Optimization. Is a JSON file more readable for
+data than having everything in code? Yes.
+
+Amended: "Style and readability are often more important than optimization."
+
+* but that's not to say that you should check whether an element is in an 100000
+  element array as the check of a while loop, which one of my project partners
+  has done, slowing our parser down from 2 seconds to 2 minutes.
+
+# 3. Abstraction is simple. Cars and garages.
+TODO
+
+Abstraction is everything I learned in my data structures class. You have a Car
+type, and a Garage type. But what if there was more?
+
+Let's try modelling something simpler than say, Facbeook. Stripe account system.
+
+User
+login info
+Account
+charge info/legal info
+
+ But now multiple people want to have access to an account. Say, the support
+ team.
+
+Users who have access, but no Account directly tied.
+
+Now internally we've started to shard data by Account ID.
+
+Okay, but now you want your users to have access to multiple accounts
+
+many to many between users and accounts (UserAccountAccess)
+
+Okay, but now an account should be able to have different projects. (michelle
+stickers v. michelle donations)
+
+user has many account, account has many users, account has many projects
+
+But now I only want my friend to access one of the projects:
+
+
+
+
+# 2. I'm going to get fired because I'm not as productive as my co-workers.
+
+A lot of really smart new grads that I've talked to have told me that they feel
+like they're going to get fired for the year at their jobs.
+
+In most cases you're not. Don't stay until 9p every night because you feel like
+you need to catch up. Don't work weekends. It's most important to not burn out and be
+really sad. That's the worst thing you can do for yourself.
+
+The people who are more productive than you just know the codebase better. And
+it all comes with time and a clear mind. You're working in someone else's code.
+
+And some people argue that they felt more productive as an intern. You're
+supposed to, because you're given a smaller, more isolated unit of work. You're
+not obligated to refactor or clean up or generally do more janitorial work
+that's involved in building inside existing code.
+
+In fact, get used to it now. Try contributing to open source.
+
+Amended: "I'm not as productive as my co-workers, but I'll get there soon with a
+reasonable amount of work."
+
+
+# 1. Projects can be finished.
+
+Hackers@Berkeley always wanted to do a "Finishathon" of sorts, because we
+realized that we were never relaly following up on and finishing our hackathon
+projects. We genuinely thought this was a good idea.
+
+Mixest. I still pay $5 a month for a droplet for it. I still occasionally have
+to perform upgrades and fix breakagess from changes in the last.fm api. Even
+though it's old and poorly designed, it's not finished.
+
+Then I started my own open source project. I thoguht that after release, it'd be
+done. But when you have users and people contributing, it's never finished. And
+it's an amazing feeling.
+
+So I amend my belief to: "Unpopular projects can be finished. You don't want
+your project to be finishable."
+
+
+# 0. The most important thing I learned in school is how to code.
+
+Today, I don't remember 
+
+The most important thing I learned in school was how to learn. I learned to be
+responsible for what I believed in. And I learned that even with a degree,
+there's so much more that I've yet to learn.
+
+
+
+## Conclusion
+
+You have to assume responsibility for what you believe in. Some people get
+lucky, but luck favors the prepared mind. Always be alert.
+
